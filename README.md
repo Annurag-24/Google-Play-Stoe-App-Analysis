@@ -1,5 +1,5 @@
 ## Google-Play-Stoe-App-Analysis
-![playstore](![image](https://user-images.githubusercontent.com/86410999/235335266-5ae57821-8083-443b-98f7-cffea29b501b.png))
+![playstore](https://user-images.githubusercontent.com/86410999/235335266-5ae57821-8083-443b-98f7-cffea29b501b.png)
 
 ### Introduction
 In this project, we investigate the different variables of Apps on Google Play Store that affect the application and the top 100 most relevant user reviews. We attempt to use our analysis to answer the following questions:
