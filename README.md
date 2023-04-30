@@ -1,8 +1,6 @@
 ## Google-Play-Stoe-App-Analysis
-<p align="center">
-<img src="(https://user-images.githubusercontent.com/86410999/235335380-0c03bb93-1150-4ab2-830b-208f189de6de.png)
-" />
-</p>
+![playstore](https://user-images.githubusercontent.com/86410999/235335733-02661aca-faae-4d96-97a9-9b853c0938d8.png)
+
 
 ### Introduction
 In this project, we investigate the different variables of Apps on Google Play Store that affect the application and the top 100 most relevant user reviews. We attempt to use our analysis to answer the following questions:
@@ -20,9 +18,9 @@ We started the analysis by creating a data dictionary to understand the structur
 
 ### Exploratory Data Analysis
 After establishing a good sense of each feature, we proceeded with plotting a pairwise plot between all the quantitative variables to look for any evident patterns or relationships between the features.
+
 #### Android Market Breakdown
-We broke down the apps by category and found that the Family and Game categories have the highest market prevalence. The Business, Tools and
-Medical apps are also catching up. We also checked how each category performed in terms of number of reviews, size and installation count. We found that the gaming category has the maximum number of reviews and install count but the family apps consume more space in the play store.
+We broke down the apps by category and found that the Family and Game categories have the highest market prevalence. The Business, Tools and Medical apps are also catching up. We also checked how each category performed in terms of number of reviews, size and installation count. We found that the gaming category has the maximum number of reviews and install count but the family apps consume more space in the play store.
 
 #### Sizing Strategy 
 We analysed the sizing distribution of the top-rated apps (rating greater than 4.5) and observed that most top-rated apps are optimally sized between ~2MB to ~40MB i.e., neither too light nor too bulky. We found that the Game and Family categories have the highest number of bulky apps. We also observed that despite this, these bulky apps are fairly highly rated indicating that they are bulky for a purpose. Majority of the paid apps that are highly rated have small sizes which implies that most paid apps are designed and developed to cater to specific functionalities and hence are not bulky. Users prefer to pay for apps that are light-weighted. A paid app that is bulky may not perform well in the market but it also depends on the category of the app.
@@ -57,4 +55,5 @@ Logistic Regression – 58.67% accuracy
 Decision Tree Classifier – 76.10% accuracy
 Random Forest Classifier – 78.16% accuracy
 Random Forest with Hyperparameter tuning - 81.08% accuracy
+
 We used Randomized Search CV to loop over a set of random values for the parameters of the model. We ran the grid search and chose the optimal number of tress, number of features at each split, maximum number of levels and the method of selecting samples. Using these parameters, we predicted the popularity of the app on our test set and obtained an accuracy of 88.05%.
